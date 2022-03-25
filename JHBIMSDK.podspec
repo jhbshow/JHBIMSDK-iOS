@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   spec.vendored_libraries = ['JHBIMSDK/VoiceConvert/libopencore-amrnb.a', 'JHBIMSDK/VoiceConvert/libopencore-amrwb.a']
-  spec.source = { :git => 'https://github.com/jhbshow/JHBIMSDK-iOS', :tag => spec.version}
+  spec.source = { :git => 'https://github.com/jhbshow/JHBIMSDK-iOS.git', :tag => spec.version}
   spec.source_files = '**/*.{h,m,mm,c}'
   spec.resource = [
   'JHBIMSDK/Resources/*.bundle'
