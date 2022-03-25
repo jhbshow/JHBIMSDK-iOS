@@ -16,16 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+     
     TUIChatConversationModel *model = [[TUIChatConversationModel alloc]init];
     model.userID = UserID;
     model.groupID = GroupID;
     model.groupType = GroupType;
     TUIGroupChatViewController *controller = [[TUIGroupChatViewController alloc]init];
     [controller setConversationData:model];
-    [self addChildViewController:controller];
-    [self.view addSubview:controller.view];
-    
+ 
+        [self addChildViewController:controller];
+        [self.view addSubview:controller.view];
     
 }
 

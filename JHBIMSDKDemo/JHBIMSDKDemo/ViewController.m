@@ -30,15 +30,19 @@
     }];
     
     
-    UIButton *btn = [UIButton new];
-    [btn setTitle:@"进入群聊" forState:UIControlStateNormal];
-    [btn setBackgroundColor:[UIColor greenColor]];
-    [btn addTarget:self action:@selector(clickEnter) forControlEvents:UIControlEventTouchUpInside];
-    btn.frame = CGRectMake(100, 300, 200, 60);
-    [self.view addSubview:btn];
-    
-    
+//    UIButton *btn = [UIButton new];
+//    [btn setTitle:@"进入群聊" forState:UIControlStateNormal];
+//    [btn setBackgroundColor:[UIColor blueColor]];
+//    [btn addTarget:self action:@selector(clickEnter) forControlEvents:UIControlEventTouchUpInside];
+//    btn.frame = CGRectMake(100, 300, 200, 60);
+//    [self.view addSubview:btn];
+//
+//
  
+    ChatViewController *chat = [[ChatViewController alloc]init];
+    [self addChildViewController:chat];
+    [self.view addSubview:chat.view];
+    
    
 }
 
