@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '9.0'
 # 防止 TUI 组件里的 *.xcassets 与您项目里面冲突。
 install! 'cocoapods', :disable_input_output_paths => true
 target 'JHBIMSDKDemo' do

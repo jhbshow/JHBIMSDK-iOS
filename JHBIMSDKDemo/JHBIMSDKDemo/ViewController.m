@@ -21,38 +21,19 @@
     
     
     [TUILogin login:UserID userSig:UserSig succ:^{
-        
+        ChatViewController *chat = [[ChatViewController alloc]init];
+        [self addChildViewController:chat];
+        [self.view addSubview:chat.view];
     } fail:^(int code, NSString *msg) {
         UIAlertController *alert = [[UIAlertController alloc]init];
         alert.title = @"登录失败";
         [self presentViewController:alert animated:true completion:nil];
         NSLog(@"登录失败");
-    }];
-    
-    
-//    UIButton *btn = [UIButton new];
-//    [btn setTitle:@"进入群聊" forState:UIControlStateNormal];
-//    [btn setBackgroundColor:[UIColor blueColor]];
-//    [btn addTarget:self action:@selector(clickEnter) forControlEvents:UIControlEventTouchUpInside];
-//    btn.frame = CGRectMake(100, 300, 200, 60);
-//    [self.view addSubview:btn];
-//
-//
+    }];  
+}
+
+
  
-    ChatViewController *chat = [[ChatViewController alloc]init];
-    [self addChildViewController:chat];
-    [self.view addSubview:chat.view];
-    
-   
-}
-
-
-- (void)clickEnter{
-    ChatViewController *chat = [[ChatViewController alloc]init];
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:chat];
-    [self presentViewController:navi animated:true completion:nil];
-
-}
 
 
 @end

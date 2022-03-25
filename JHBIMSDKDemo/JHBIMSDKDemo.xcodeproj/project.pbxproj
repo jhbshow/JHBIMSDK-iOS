@@ -121,8 +121,8 @@
 				727A006F27ED4E04000B9D27 /* Sources */,
 				727A007027ED4E04000B9D27 /* Frameworks */,
 				727A007127ED4E04000B9D27 /* Resources */,
-				799E89D35A7E28A37DC38A4B /* [CP] Embed Pods Frameworks */,
-				011C215394595B39991BDF23 /* [CP] Copy Pods Resources */,
+				E1B73EFB4C4FE6851AB4B402 /* [CP] Copy Pods Resources */,
+				E46ED5E2E5AF6074AAAA9A9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,7 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		011C215394595B39991BDF23 /* [CP] Copy Pods Resources */ = {
+		E1B73EFB4C4FE6851AB4B402 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,7 +193,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JHBIMSDKDemo/Pods-JHBIMSDKDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		799E89D35A7E28A37DC38A4B /* [CP] Embed Pods Frameworks */ = {
+		E46ED5E2E5AF6074AAAA9A9D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
