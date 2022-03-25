@@ -6,9 +6,10 @@
 //
 
 #import "ViewController.h"
-#import "JHBIMSDK/TUIGroupChatViewController.h"
- 
+
+#import "TUILogin.h"
 #import "Config.h"
+#import "ChatViewController.h"
 @interface ViewController ()
 
 @end
@@ -19,14 +20,34 @@
     [super viewDidLoad];
     
     
-    TUIChatConversationModel *model = [[TUIChatConversationModel alloc]init];
-    model.userID = UserID;
-    model.groupID = GroupID;
-    model.groupType = GroupType;
-    TUIGroupChatViewController *controller = [[TUIGroupChatViewController alloc]init];
-    [controller setConversationData:model];
-    [self addChildViewController:controller];
-    [self.view addSubview:controller.view];
+    [TUILogin login:UserID userSig:UserSig succ:^{
+        
+    } fail:^(int code, NSString *msg) {
+        UIAlertController *alert = [[UIAlertController alloc]init];
+        alert.title = @"登录失败";
+        [self presentViewController:alert animated:true completion:nil];
+        NSLog(@"登录失败");
+    }];
+    
+    
+    UIButton *btn = [UIButton new];
+    [btn setTitle:@"进入群聊" forState:UIControlStateNormal];
+    [btn setBackgroundColor:[UIColor greenColor]];
+    [btn addTarget:self action:@selector(clickEnter) forControlEvents:UIControlEventTouchUpInside];
+    btn.frame = CGRectMake(100, 300, 200, 60);
+    [self.view addSubview:btn];
+    
+    
+ 
+   
+}
+
+
+- (void)clickEnter{
+    ChatViewController *chat = [[ChatViewController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:chat];
+    [self presentViewController:navi animated:true completion:nil];
+
 }
 
 

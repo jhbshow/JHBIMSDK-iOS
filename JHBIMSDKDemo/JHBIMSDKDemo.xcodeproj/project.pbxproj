@@ -16,6 +16,7 @@
 		727A008627ED4E05000B9D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727A008427ED4E05000B9D27 /* LaunchScreen.storyboard */; };
 		727A008927ED4E05000B9D27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A008827ED4E05000B9D27 /* main.m */; };
 		727A00A627ED69F9000B9D27 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A00A527ED69F9000B9D27 /* Config.m */; };
+		727A00D427ED7A47000B9D27 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A00D327ED7A47000B9D27 /* ChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		727A008827ED4E05000B9D27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		727A00A427ED69F9000B9D27 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		727A00A527ED69F9000B9D27 /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		727A00D227ED7A47000B9D27 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		727A00D327ED7A47000B9D27 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		BEF7BBB4E0C4D747409699EE /* Pods-JHBIMSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHBIMSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-JHBIMSDKDemo/Pods-JHBIMSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +104,8 @@
 				727A008827ED4E05000B9D27 /* main.m */,
 				727A00A427ED69F9000B9D27 /* Config.h */,
 				727A00A527ED69F9000B9D27 /* Config.m */,
+				727A00D227ED7A47000B9D27 /* ChatViewController.h */,
+				727A00D327ED7A47000B9D27 /* ChatViewController.m */,
 			);
 			path = JHBIMSDKDemo;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			files = (
 				727A00A627ED69F9000B9D27 /* Config.m in Sources */,
 				727A007E27ED4E04000B9D27 /* ViewController.m in Sources */,
+				727A00D427ED7A47000B9D27 /* ChatViewController.m in Sources */,
 				727A007827ED4E04000B9D27 /* AppDelegate.m in Sources */,
 				727A008927ED4E05000B9D27 /* main.m in Sources */,
 				727A007B27ED4E04000B9D27 /* SceneDelegate.m in Sources */,

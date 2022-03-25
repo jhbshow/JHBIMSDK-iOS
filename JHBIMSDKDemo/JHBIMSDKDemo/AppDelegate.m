@@ -18,11 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [TUILogin initWithSdkAppID:1400631411];
-    [TUILogin login:UserID userSig:UserSig succ:^{
-        NSLog(@"111");
-    } fail:^(int code, NSString *msg) {
-        NSLog(@"222");
-    }];
+ 
     return YES;
 }
 
