@@ -6,7 +6,9 @@
 //
 
 #import "ViewController.h"
-
+#import "JHBIMSDK/TUIGroupChatViewController.h"
+ 
+#import "Config.h"
 @interface ViewController ()
 
 @end
@@ -15,7 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    TUIChatConversationModel *model = [[TUIChatConversationModel alloc]init];
+    model.userID = UserID;
+    model.groupID = GroupID;
+    model.groupType = GroupType;
+    TUIGroupChatViewController *controller = [[TUIGroupChatViewController alloc]init];
+    [controller setConversationData:model];
+    [self addChildViewController:controller];
+    [self.view addSubview:controller.view];
 }
 
 

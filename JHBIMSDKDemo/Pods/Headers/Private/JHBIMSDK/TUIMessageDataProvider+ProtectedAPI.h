@@ -1,0 +1,1 @@
+../../../../../JHBIMSDK/DataProvider/TUIMessageDataProvider+ProtectedAPI.h

@@ -1,0 +1,1 @@
+../../../../../JHBIMSDK/UI/Chat/TUIMessageController.h

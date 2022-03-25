@@ -1,3 +1,37 @@
-PODFILE CHECKSUM: 5f7df4105fdea3cc198b877af58d3ab92a98ec16
+PODS:
+  - JHBIMSDK (1.0.0):
+    - TUICore (= 6.1.2155)
+  - ReactiveObjC (3.1.1)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - TUICore (6.1.2155):
+    - ReactiveObjC
+    - SDWebImage
+    - TXIMSDK_Plus_iOS (= 6.1.2155)
+  - TXIMSDK_Plus_iOS (6.1.2155)
+
+DEPENDENCIES:
+  - JHBIMSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ReactiveObjC
+    - SDWebImage
+    - TUICore
+    - TXIMSDK_Plus_iOS
+
+EXTERNAL SOURCES:
+  JHBIMSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JHBIMSDK: acec3cd245d3a911348709e5412676cc7de418c3
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  TUICore: e0f815c4c8953f2286d93b1812db2ad320db7df2
+  TXIMSDK_Plus_iOS: 82b65eb3c5f72b3ebaa7071f2703762f2c28d3bf
+
+PODFILE CHECKSUM: 843caac0d0fc73d8ffadaa81beddfe0afe415a22
 
 COCOAPODS: 1.10.1

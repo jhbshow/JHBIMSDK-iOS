@@ -1,0 +1,1 @@
+../../../../../JHBIMSDK/UI/Base/Camera/TUICameraMacro.h

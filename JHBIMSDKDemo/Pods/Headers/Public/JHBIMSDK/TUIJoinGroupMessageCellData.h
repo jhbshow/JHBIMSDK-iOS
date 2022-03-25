@@ -1,0 +1,1 @@
+../../../../../JHBIMSDK/Cell/CellData/Chat/TUIJoinGroupMessageCellData.h

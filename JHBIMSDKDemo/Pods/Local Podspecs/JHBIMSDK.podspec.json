@@ -1,0 +1,42 @@
+{
+  "name": "JHBIMSDK",
+  "version": "1.0.0",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "homepage": "https://github.com/jhbshow/JHBIMSDK-iOS",
+  "documentation_url": "https://github.com/jhbshow/JHBIMSDK-iOS",
+  "authors": "davis",
+  "summary": "腾讯带UI的IM私有化部署",
+  "xcconfig": {
+    "VALID_ARCHS": "armv7 arm64 x86_64"
+  },
+  "libraries": "stdc++",
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/jhbshow/JHBIMSDK-iOS",
+    "tag": "1.0.0"
+  },
+  "dependencies": {
+    "TUICore": [
+      "6.1.2155"
+    ]
+  },
+  "source_files": "**/JHBIMSDK/**/*.{h,m,mm}",
+  "vendored_libraries": [
+    "**/JHBIMSDK/VoiceConvert/*.a"
+  ],
+  "resources": [
+    "**/JHBIMSDK/Resources/*.bundle"
+  ],
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
+}

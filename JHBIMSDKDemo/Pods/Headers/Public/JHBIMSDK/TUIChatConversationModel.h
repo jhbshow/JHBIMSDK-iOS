@@ -1,0 +1,1 @@
+../../../../../JHBIMSDK/DataProvider/TUIChatConversationModel.h
